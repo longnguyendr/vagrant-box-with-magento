@@ -1,9 +1,15 @@
 ###### Download Magento 2.2 
+
 From [Magento offical download page](https://magento.com/tech-resources/download), download with the .tar.gz extension
 And save in the root folder, named it 'MagentoCE-22.tar.gz'
 ---
-
-After run
+Download Magento before run 
+´´´
+$ vagrant up
+$ vagrant ssh
+´´´
+---
+After that
 ´´´
 $ vagrant up
 $ vagrant ssh
