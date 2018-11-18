@@ -9,7 +9,7 @@ apt-get install curl
 
 apt-get install -y composer
 
-apt-get install -y php
+# apt-get install -y php
 
 apt install -y php7.0 libapache2-mod-php7.0 php7.0-common php7.0-gd php7.0-mysql php7.0-mcrypt php7.0-curl php7.0-intl php7.0-xsl php7.0-mbstring php7.0-zip php7.0-bcmath php7.0-iconv php7.0-soap
 
@@ -64,7 +64,7 @@ service apache2 restart
 
 mkdir -p /var/www/magento2ce
 #unzip magento
-sudo tar -zxvf /vagrant/MagentoCE-22.tar.gz -C /var/www/magento2ce/
+sudo tar -zxvf /vagrant/Magento-CE*.tar.gz -C /var/www/magento2ce/
 chown -R www-data:www-data /var/www/magento2ce
 chmod -R 755 /var/www/magento2ce
 
