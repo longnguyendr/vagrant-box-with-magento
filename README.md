@@ -25,12 +25,12 @@ $ mysql -u magento -p
 
 ---
 
-Now you can come to http://127.0.0.1:1180 or http://localhost:1180 to start setup 
+Now you can move to http://127.0.0.1:1180 or http://localhost:1180 and start setup 
 
 ---
 ###### Note
 
-If the frontend is messy, run
+If the frontend is broken, run
 
 ```
 cd /var/www/magento2ce
