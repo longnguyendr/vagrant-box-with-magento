@@ -1,5 +1,5 @@
 ### Description
-This is another method to install magento on window environment
+This is another method to install and develop web application with magento framework on window environment
 
 ### Dependencies:
 
