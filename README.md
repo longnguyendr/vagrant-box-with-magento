@@ -22,6 +22,7 @@ $ mysql -u magento -p
 ```
 
 ###### Now you can login to mysql with ``` User: magento, Password: magento ```, which you can changed in bootstrap.sh
+
 ---
 
 Now you can come to http://127.0.0.1:1180 or http://localhost:1180 to start setup 
