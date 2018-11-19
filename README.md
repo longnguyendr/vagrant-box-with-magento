@@ -1,3 +1,5 @@
+### Description
+This is another method to install magento on window environment
 
 ### Dependencies:
 
