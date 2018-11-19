@@ -11,15 +11,6 @@ and save it to ``` vagrant-box-with-magento ```
 ```
 $ vagrant up
 $ vagrant ssh
-```
----
-
-After that
-
-```
-
-$ vagrant up
-$ vagrant ssh
 
 ```
 
