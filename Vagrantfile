@@ -20,8 +20,7 @@ Vagrant.configure("2") do |config|
   # using a specific IP.
   config.vm.network "private_network", ip: "192.168.56.10"
   config.vm.network "private_network", type: "dhcp"
-
-	
+  
   # Share an additional folder to the guest VM. The first argument is
   # the path on the host to the actual folder. The second argument is
   # the path on the guest to mount the folder. And the optional third
@@ -52,14 +51,6 @@ Vagrant.configure("2") do |config|
   #   apt-get update
   #   apt-get install -y apache2
   # SHELL
-  
-  #config.ssh.username = 'vagrant'
-  #config.ssh.password = 'vagrant'
-  #config.ssh.insert_key = true
 
   config.vm.provision :shell, path: ".vagrant/VagrantBootstrap.sh"	
-  #config.vm.provision "shell", inline: <<-SHELL
-	#sed -i 's/ChallengeResponseAuthentication no/ChallengeResponseAuthentication yes/g' /etc/ssh/sshd_config    
-	#service ssh restart
-  #SHELL
 end
