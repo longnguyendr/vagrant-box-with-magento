@@ -61,5 +61,9 @@ sudo tar -zxvf /vagrant/Magento-CE*.tar.gz -C /var/www/magento2ce/
 cd /var/www/magento2ce/
 composer install
 
+#Fixing front-end
+cd /var/www/magento2ce
+php bin/magento setup:static-content:deploy -f
+
 echo 'magento unzip done'
 
