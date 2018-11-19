@@ -36,5 +36,8 @@ If the frontend is broken, run
 cd /var/www/magento2ce
 php bin/magento setup:static-content:deploy -f
 ```
-You can find out how to install manual here:
+You can find out how to install manually without vagrant here:
 * [How to install magento on Ubuntu](https://websiteforstudents.com/install-magento-ubuntu-17-04-17-10-apache2-mariadb-php/?)
+
+Other Creator:
+* [Quynh Dao](https://github.com/siennad/vagrant-box-with-magento)
