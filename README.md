@@ -17,7 +17,7 @@ $ vagrant ssh
 ```
 
 You now have your database and magento set. 
-To secure your database, run the below command to set password for mysql root 
+Run the below command to access mysql as new user 
 
 ```
 $ mysql -u magento -p
