@@ -5,11 +5,11 @@ add-apt-repository -y ppa:ondrej/php
 apt-get update -y
 apt-get install -y apache2
 
-apt-get install curl
+apt-get install curl -y
 
 apt-get install -y composer
 
-apt-get install -y php
+#apt-get install -y php
 
 apt install -y php7.0 libapache2-mod-php7.0 php7.0-common php7.0-gd php7.0-mysql php7.0-mcrypt php7.0-curl php7.0-intl php7.0-xsl php7.0-mbstring php7.0-zip php7.0-bcmath php7.0-iconv php7.0-soap
 
@@ -37,7 +37,7 @@ Q3="GRANT ALL ON magento.* TO 'magento'@'localhost' IDENTIFIED BY 'magento';"
 Q4="FLUSH PRIVILEGES;"
 SQL="${Q1}${Q2}${Q3}${Q4}"
 
-sudo $MYSQL -uroot -e "$SQL"
+sudo $MYSQL -u root -e "$SQL"
 echo 'created Magento database'
 
 service mysql restart
@@ -62,11 +62,13 @@ a2ensite magento
 a2dissite 000-default
 service apache2 restart
 
-mkdir -p /var/www/magento2ce
-#unzip magento
-sudo tar -zxvf /vagrant/MagentoCE-22.tar.gz -C /var/www/magento2ce/
+sudo mkdir -p /var/www/magento2ce
 chown -R www-data:www-data /var/www/magento2ce
 chmod -R 755 /var/www/magento2ce
+#unzip magento
+sudo tar -zxvf /vagrant/Magento-CE*.tar.gz -C /var/www/magento2ce/
+cd /var/www/magento2ce/
+composer install
 
 echo 'magento unzip done'
 

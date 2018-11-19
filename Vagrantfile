@@ -55,7 +55,7 @@ Vagrant.configure("2") do |config|
   
   #config.ssh.username = 'vagrant'
   #config.ssh.password = 'vagrant'
-  config.ssh.insert_key = true
+  #config.ssh.insert_key = true
 
   config.vm.provision :shell, path: ".vagrant/VagrantBootstrap.sh"	
   #config.vm.provision "shell", inline: <<-SHELL
